@@ -16,7 +16,7 @@ const coursesData = [
         id: 1,
         text: "Ages 12 to 25",
       },
-      { id: 2, text: "36 Sessions" },
+      { id: 2, text: "28 Sessions" },
     ],
 
     infoL: [
@@ -94,21 +94,23 @@ function Courses() {
               >
                 {option.value}
               </button>
-              <div
-                className={`absolute top-[-40px] ${
-                  isActive === option.id ? "left-[-40px] " : "left-[160px]"
-                }
+              <div className="sm:block hidden">
+                <div
+                  className={`absolute top-[-40px] ${
+                    isActive === option.id ? "left-[-40px] " : "left-[160px]"
+                  }
                 ${(index + 1) / optionData.length == 1 ? "hidden" : "block"}
                 `}
-                onClick={() => setIsActive(option.id)}
-              >
-                <Image
-                  src="/Untitled.png"
-                  alt="selected"
-                  layout="fixed"
-                  height={150}
-                  width={260}
-                />
+                  onClick={() => setIsActive(option.id)}
+                >
+                  <Image
+                    src="/Untitled.png"
+                    alt="selected"
+                    layout="fixed"
+                    height={150}
+                    width={260}
+                  />
+                </div>
               </div>
             </>
           ))}

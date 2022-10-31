@@ -29,10 +29,10 @@ function Header({ toggle }) {
   return (
     <>
       <nav
-        className={`w-full h-[80px]  flex  justify-between items-center z-10 fixed  `}
+        className={` w-full h-[80px]  flex  justify-between items-center z-10 fixed  `}
       >
         <div
-          className={`cursor-pointer flex-[0.3] sm:flex-[0.1] flex items-center justify-center z-10 ml-10 border-[#14213d] bg-[#14213d] shadow-lg rounded-br-[30px] h-[100px]`}
+          className={`cursor-pointer flex-[0.3] md:flex-[0.1] flex items-center justify-center z-10 ml-4 sm:ml-10 border-[#14213d] bg-[#14213d] shadow-lg rounded-br-[30px] h-[100px]`}
         >
           <Link
             to="hero"
@@ -47,7 +47,7 @@ function Header({ toggle }) {
           </Link>
         </div>
         <div
-          className={`hidden sm:flex items-center justify-between flex-[0.4] ml-10 rounded-bl-[30px] px-[20px] h-full ${
+          className={`hidden md:flex items-center justify-between flex-[0] sm:flex-[0.6] ml-0 sm:ml-10 rounded-bl-[30px] px-0 sm:px-[20px] h-full ${
             scrollNav ? "bg-[#14213d]" : "bg-transparent"
           }`}
         >
@@ -76,7 +76,7 @@ function Header({ toggle }) {
         </div>
         <div
           onClick={toggle}
-          className=" block absolute top-0 right-0 translate-x-[-100%] translate-y-[60%] text-2xl cursor-pointer text-[#14213d] sm:hidden"
+          className=" block absolute top-0 right-[24px] sm:right-0 translate-x-[-100%] translate-y-[60%] text-2xl cursor-pointer text-[#14213d] md:hidden"
         >
           <FaBars />
         </div>

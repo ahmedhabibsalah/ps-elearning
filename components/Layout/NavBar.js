@@ -8,10 +8,10 @@ function NavBar() {
     setIsOpen(!isOpen);
   };
   return (
-    <>
+    <div className="block m-0 p-0">
       <SideBar toggle={toggle} isOpen={isOpen} />
       <Header toggle={toggle} />
-    </>
+    </div>
   );
 }
 

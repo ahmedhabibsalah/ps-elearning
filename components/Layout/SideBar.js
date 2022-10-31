@@ -10,7 +10,7 @@ const navData = [
 function SideBar({ isOpen, toggle }) {
   return (
     <aside
-      className={`fixed z-[999] w-full h-full bg-[#14213d] grid items-center top-0 left-0 ease-in-out delay-75 ${
+      className={`fixed z-[999] w-full h-full bg-[#14213d] grid place-items-center	 top-0 left-0 ease-in-out delay-75 ${
         isOpen ? "opacity-100" : "opacity-0"
       } ${isOpen ? "top-0" : "top-[-100%]"}
       `}

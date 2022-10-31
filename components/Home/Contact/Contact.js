@@ -127,6 +127,7 @@ function Contact() {
             layout="responsive"
             height={300}
             width={280}
+            priority
           />
         </div>
       </div>
