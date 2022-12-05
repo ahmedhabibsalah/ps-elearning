@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>PS e-Learning</title>
+        <link rel="icon" href="/ps.png" />
         <link
           href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap"
           rel="stylesheet"
